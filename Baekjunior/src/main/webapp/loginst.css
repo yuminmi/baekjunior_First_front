@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+header {
+	height: 70px;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+header>i {
+	position: absolute;
+	top: 35px;
+	right: 35px;
+}
+
+header>i:hover {
+	cursor: pointer;
+}
+
+body {
+	background: url(img/paper_bg.jpeg);
+}
+
+#x {
+	display: none;
+}
+
+ul, li {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.menu {
+	width: 300px;
+	position: fixed;
+	right: 0px;
+	top: 80px;
+	border-left: ridge;
+	display: none;
+	z-index: 2;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+a:hover {
+	letter-spacing: 3px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
+	text-align: center;
+}
+
+.menu_box {
+	height: 1000px;
+	line-height: 40px;
+	margin: 0 80px;
+	padding: 10px;
+}
+
+.menu_box>ul li {
+	font-size: 12px;
+	font-weight: bold;
+}
+/*header menu 끝*/
+.login_pg {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.blue {
+	width: 200px;
+	position: absolute;
+	top: 110px;
+	left: 420px;
+	z-index: 2;
+}
+
+.logbox {
+	width: 400px;
+	height: 440px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding: 25px;
+	position: absolute;
+	top: 250px;
+	left: 292px;
+}
+
+label {
+	font-size: x-large;
+	font-weight: 600;
+	margin: 10px;
+}
+
+form div {
+	margin: 30px 45px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 300px;
+	height: 40px;
+	border-radius: 10px;
+	margin: 20px 0;
+}
+
+input[type="submit"] {
+	width: 170px;
+	height: 40px;
+	border-radius: 10px;
+	left: 135px;
+	position: absolute;
+	font-size: inherit;
+	background: #5a9cf2;
+	color: white;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+	letter-spacing: 3px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.tosign {
+	position: absolute;
+	left: 190px;
+	top: 420px;
+	text-align: center;
+}
+
+.tosign:hover {
+	letter-spacing: 0.3px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
+}

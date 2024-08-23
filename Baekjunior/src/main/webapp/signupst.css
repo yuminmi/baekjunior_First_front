@@ -1,0 +1,164 @@
+@charset "UTF-8"; 
+
+ @charset "UTF-8";
+
+header {
+	height: 70px;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+header>i {
+	position: absolute;
+	top: 35px;
+	right: 35px;
+}
+
+header>i:hover {
+	cursor: pointer;
+}
+
+body {
+	background: url(img/paper_bg.jpeg);
+}
+
+#x {
+	display: none;
+}
+
+ul, li {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.menu {
+	width: 300px;
+	position: fixed;
+	right: 0px;
+	top: 80px;
+	border-left: ridge;
+	display: none;
+	z-index: 2;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu_box {
+	height: 1000px;
+	line-height: 40px;
+	margin: 0 80px;
+	padding: 10px;
+}
+
+.menu_box>ul li {
+	font-size: 12px;
+	font-weight: bold;
+}
+/*header menu 끝*/
+.login_pg {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	height: 1500px;
+}
+
+.blue {
+	width: 200px;
+	position: absolute;
+	top: 100px;
+	left: 420px;
+	z-index: 2;
+}
+
+a:hover {
+	letter-spacing: 3px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
+	text-align: center;
+}
+
+.logbox {
+	width: 600px;
+	height: 800px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding: 25px;
+	position: absolute;
+	top: 240px;
+	left: 200px;
+	padding-top: 40px;
+}
+
+label {
+	font-size: x-large;
+	font-weight: 600;
+	margin: 10px;
+}
+
+form div {
+	margin: 20px 70px;
+	margin-bottom: 40px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+	width: 450px;
+	height: 45px;
+	border-radius: 10px;
+	margin: 20px 0;
+}
+
+#id {
+	width: 320px;
+}
+
+#checkid {
+	position: absolute;
+	height: 50px;
+	border-radius: 10px;
+	margin: 20px 0;
+	width: 140px;
+	font-size: inherit;
+	background: #5a9cf2;
+	color: white;
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+input[type="submit"] {
+	width: 170px;
+	height: 40px;
+	border-radius: 10px;
+	left: 115px;
+	position: absolute;
+	font-size: inherit;
+	background: #5a9cf2;
+	color: white;
+	font-weight: bold;
+	margin: 0 120px;
+}
+
+input[type="submit"]:hover {
+	letter-spacing: 3px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+input[type="button"]:hover {
+	letter-spacing: 0.3px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.tosign {
+	position: absolute;
+	left: 170px;
+	top: 420px;
+}
