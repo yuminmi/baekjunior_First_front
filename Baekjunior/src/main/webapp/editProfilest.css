@@ -101,6 +101,7 @@ header [class^="main_menu_"]>ul>li:hover {
 	background: #ebebeb;
 }
 
+
 .banner {
 	position: relative;
 	width: 100%;
@@ -135,7 +136,7 @@ header [class^="main_menu_"]>ul>li:hover {
 
 .inner_contents {
 	flex: 8;
-	margin-top: 40px;
+	margin-top: 30px;
 	margin-right: 200px;
 	margin-left: 100px;
 }
@@ -156,7 +157,7 @@ table, tr, td {
 
 table {
 	width: 100%;
-	margin-top: 55px;
+	margin-top: 170px;
 }
 
 td {
@@ -166,6 +167,7 @@ td {
 
 .myinfo {
 	display: flex;
+	justify-content: center;
 }
 
 .img_box {
@@ -174,29 +176,58 @@ td {
 }
 
 .info_box {
-	display: inline-block;
-	flex: 8.5;
-	position: relative;
-	top: 30px;
-	margin: 0 60px;
+	display: flex;
+    flex: 8.5;
+    position: relative;
+    top: 30px;
+    margin: 0 60px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info_box>h1 {
 	font-size: xx-large;
 	font-weight: 400;
+	margin-top: 40px;
 }
 
 form {
 	display: flex;
 }
+button {
+	height: 40px;
+    width: 230px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+button:hover {
+	letter-spacing: 1px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.imgUpload {
+	display:none;
+}
 
 textarea {
 	flex: 8;
-	height: 75px;
+	width: 900px;
+	padding: 20px 20px 0 20px;
+	border: 3px solid black;
 }
 
 input[type="submit"] {
-	flex: 2;
-	height: 75px;
-	margin-left: 10px;
+	height: 40px;
+    /* margin-left: 10px; */
+    width: 130px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+input[type="submit"]:hover {
+	letter-spacing: 3px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
 }

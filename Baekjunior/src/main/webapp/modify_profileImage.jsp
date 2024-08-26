@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	import="java.sql.*, java.util.*, java.io.*, javax.naming.*, Baekjunior.db.*, Baekjunior.multipart.*"
-	session="false"%>
+	import="java.sql.*, java.util.*, java.io.*, javax.naming.*, Baekjunior.db.*, Baekjunior.multipart.*" session="false"%>
 <%
 request.setCharacterEncoding("utf-8");
 
 String userId = request.getParameter("user_id");
 String originalFileName = "";
 String savedFileName = "";
+String introText = request.getParameter("intro");
 
 UserInfoDB uidb = new UserInfoDB();
 ServletContext context = getServletContext();
@@ -26,7 +26,14 @@ if(multiPart.getMyPart("fileName") != null) {
 	uidb.updateProfileImage(userId, multiPart.getOriginalFileName("fileName"), multiPart.getSavedFileName("fileName"));
 }
 
-uidb.close();
+try {
+	uidb.updateIntro(userId, introText);
+	uidb.close();
+	response.sendRedirect("editProfile.jsp");
+	
+} catch(SQLException e) {
+	out.print(e);
+	return;
+}
 
-response.sendRedirect("editProfile.jsp");
 %>
